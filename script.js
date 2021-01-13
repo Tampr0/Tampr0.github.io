@@ -1,8 +1,8 @@
 $(document).ready(function() {
   const apiRoot = 'http://localhost:8080/v1/task/';
   const trelloApiRoot = 'http://localhost:8080/v1/trello/';
-  var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
-  var $tasksContainer = $('[data-tasks-container]');
+  const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
+  const $tasksContainer = $('[data-tasks-container]');
 
   var availableBoards = {};
   var availableTasks = {};
@@ -63,7 +63,7 @@ $(document).ready(function() {
   }
 
   function getAllTasks() {
-    var requestUrl = apiRoot + 'getTasks';
+    const requestUrl = apiRoot + 'getTasks';
 
     $.ajax({
       url: requestUrl,
