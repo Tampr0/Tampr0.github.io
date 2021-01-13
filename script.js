@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    //w momenie wgrania się strony internetowej wykonuje się funkcja którą jest de facto cała treść pliku.
+
   const apiRoot = 'https://powerful-wave-02152.herokuapp.com/v1/task/';
   const trelloApiRoot = 'https://powerful-wave-02152.herokuapp.com/v1/trello/';
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
@@ -18,7 +20,8 @@ $(document).ready(function() {
       url: requestUrl,
       method: 'GET',
       contentType: 'application/json',
-      success: function(boards) { callback(callbackArgs, boards); }
+      success: function(boards) { 
+        callback(callbackArgs, boards); }
     });
   }
 
