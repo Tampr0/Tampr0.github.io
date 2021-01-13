@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = 'https://guarded-castle-74657.herokuapp.com/v1/task/';
+  var apiRoot = 'https://powerful-wave-02152.herokuapp.com/v1/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
