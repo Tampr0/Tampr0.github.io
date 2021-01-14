@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = "http://localhost:8080/v1/task/";
-  // var apiRoot = 'https://powerful-wave-02152.herokuapp.com/task/';
+  var apiRoot = 'http://localhost:8080/v1/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
@@ -12,8 +11,6 @@ $(document).ready(function() {
     var element = $(datatableRowTemplate).clone();
 
     element.attr('data-task-id', data.id);
-    // . attr(atributeName, value)
-
     element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.title);
     element.find('[data-task-name-section] [data-task-name-input]').val(data.title);
 
