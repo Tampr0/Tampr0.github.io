@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  var apiRoot = "http://localhost:8080/v1/task/";
-  // var apiRoot = 'https://powerful-wave-02152.herokuapp.com/task/';
+  // var apiRoot = "http://localhost:8080/v1/task/";
+  var apiRoot = 'https://powerful-wave-02152.herokuapp.com/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
